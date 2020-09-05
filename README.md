@@ -1,5 +1,10 @@
 # Material
+
 Un thème simple pour le CMS flat-file 99ko.
+
+## Installation
+
+Télécharger le code, et mettez simplement le dossier *material* du ZIP dans le dossier `theme` de votre installation 99ko. Dans la configuration du site, sélectionnez le thème `Material`, et voilà :)
 
 ## Fonctionnalités
 * Images de Gravatar pour les commentaires
@@ -26,4 +31,5 @@ Un thème simple pour le CMS flat-file 99ko.
 ## Sources
 
 [MaterializeCSS](https://materializecss.com/)
+
 [Icones](https://iconify.design/icon-sets/mdi/)
