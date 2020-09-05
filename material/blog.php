@@ -12,8 +12,8 @@
 			<?php if($runPlugin->getConfigVal('comments') && !$v['commentsOff']){ ?> | <?php echo $newsManager->countComments($v['id']); ?> commentaire<?php if ($newsManager->countComments($v['id']) > 1) echo 's' ?><?php } ?></p>
 		</h2>
 		<?php
-		if($pluginsManager->isActivePlugin('galerie') && galerie::searchByfileName($v['img'])) echo '<img class="featured" src="'.UPLOAD.'galerie/'.$v['img'].'" alt="'.$v['img'].'" />';
-		echo util::cutStr($v['content'], 200) ;
+		if($pluginsManager->isActivePlugin('galerie') && galerie::searchByfileName($v['img'])) echo '<img class="featured" src="'.UPLOAD.'galerie/'.$v['img'].'" alt="'.$v['img'].'" /><p>';
+		echo util::cutStr($v['content'], 200, '... <a href="' .$v['url'] .'">Lire la suite</a>') . '</p>' ;
 		} else{ ?>
 		<h2>
 			<a href="<?php echo $v['url']; ?>"><?php echo $v['name']; ?></a>
